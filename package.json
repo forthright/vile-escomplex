@@ -1,0 +1,69 @@
+{
+  "name": "@forthright/vile-escomplex",
+  "version": "0.1.0",
+  "description": "A vile plugin for tracking complexity via escomplex",
+  "license": "MPL-2.0",
+  "repository": "https://github.com/forthright/vile-escomplex",
+  "main": "lib/index.js",
+  "files": [
+    "bin",
+    "lib",
+    "README.md"
+  ],
+  "keywords": [
+    "escomplex",
+    "complexity",
+    "javascript",
+    "maintainability",
+    "vile"
+  ],
+  "scripts": {
+    "coffee": "coffee",
+    "compile": "node bin/compile",
+    "compile-dev": "coffee -cbo .test test",
+    "dev": "bin/dev",
+    "istanbul": "istanbul",
+    "release-it": "release-it",
+    "test": "_mocha --recursive -u bdd -R spec -t 2000 .test/spec.js",
+    "test-cov": "bin/test-cov",
+    "update": "ncu -a",
+    "vile": "vile p -usi -x src:lib --nodecorations"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "escomplex": "^2.0.0-alpha",
+    "lodash": "^4.17.1"
+  },
+  "devDependencies": {
+    "@forthright/vile": ">=0.11.0",
+    "@forthright/vile-comment": ">=0.1.16",
+    "@forthright/vile-coverage": ">=0.2.13",
+    "@forthright/vile-depcheck": ">=0.1.11",
+    "@forthright/vile-eclint": ">=0.1.9",
+    "@forthright/vile-eslint": ">=0.1.12",
+    "@forthright/vile-git": "^0.5.0",
+    "@forthright/vile-jshint": ">=0.2.11",
+    "@forthright/vile-language": ">=0.1.11",
+    "@forthright/vile-ncu": ">=0.2.0",
+    "@forthright/vile-newline": ">=0.1.11",
+    "@forthright/vile-nsp": ">=0.2.11",
+    "@forthright/vile-semver": ">=0.1.10",
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "chai": "~3.5.0",
+    "chai-as-promised": "~6.0.0",
+    "coffee-script": "~1.11.1",
+    "constable": "~0.0.4",
+    "istanbul": "~0.4.5",
+    "mimus": "~0.2.3",
+    "mocha": "~3.1.2",
+    "npm-check-updates": ">=2.8.6",
+    "release-it": "^2.5.1",
+    "shelljs": "^0.7.5",
+    "sinon": "~1.17.6",
+    "sinon-chai": "~2.8.0"
+  },
+  "peerDependencies": {
+    "@forthright/vile": ">=0.11.0"
+  }
+}

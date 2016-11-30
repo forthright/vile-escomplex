@@ -1,0 +1,74 @@
+vile:
+  ignore:
+    - appveyor.yml
+    - coverage
+    - coffeelint.json
+    - .ackrc
+    - .babelrc
+    - .build
+    - .npmignore
+    - .travis.yml
+    - .vim.custom
+    - node_modules
+    - tags
+    - .test
+    - .ctags
+    - .git
+    - circle.yml
+    - .editorconfig
+    - .eslintignore
+    - .eslintrc
+    - .gitignore
+    - .npmrc
+    - tags
+    - tmp
+    - tsconfig.json
+    - tslint.json
+    - tsd.json
+    - vendor
+    - README.md
+    - typings
+    - .vile.yml
+
+depcheck:
+  config:
+    ignore_dev_deps: false
+    ignore_dirs:
+      - src
+      - node_modules
+      - coverage
+      - tmp
+    ignore_deps:
+      - mocha
+      - babel-cli
+      - coffee-script
+      - istanbul
+      - release-it
+      - typescript
+      - wrench
+      - pryjs
+      - shelljs
+      - "@forthright/*"
+
+escomplex:
+  ignore:
+    - lib
+
+length:
+  ignore:
+    - lib
+  config:
+    file: 120
+    line: 80
+
+language:
+  ignore:
+    - lib
+
+stat:
+  ignore:
+    - lib
+
+coverage:
+  config:
+    path: coverage/lcov.info
