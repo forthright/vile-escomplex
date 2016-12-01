@@ -27,15 +27,15 @@
     "test": "_mocha --recursive -u bdd -R spec -t 2000 .test/spec.js",
     "test-cov": "bin/test-cov",
     "update": "ncu -a",
-    "vile": "vile p -usi -x src:lib --nodecorations"
+    "vile": "vile p -usi -x src:lib,test.coffee:.test.js --nodecorations"
   },
   "dependencies": {
     "bluebird": "^3.4.6",
     "escomplex": "^2.0.0-alpha",
-    "lodash": "^4.17.1"
+    "lodash": "^4.17.2"
   },
   "devDependencies": {
-    "@forthright/vile": ">=0.11.0",
+    "@forthright/vile": ">=0.11.2",
     "@forthright/vile-comment": ">=0.1.16",
     "@forthright/vile-coverage": ">=0.2.13",
     "@forthright/vile-depcheck": ">=0.1.11",
@@ -56,14 +56,15 @@
     "constable": "~0.0.4",
     "istanbul": "~0.4.5",
     "mimus": "~0.2.3",
-    "mocha": "~3.1.2",
-    "npm-check-updates": ">=2.8.6",
+    "mocha": "~3.2.0",
+    "npm-check-updates": ">=2.8.7",
     "release-it": "^2.5.1",
     "shelljs": "^0.7.5",
     "sinon": "~1.17.6",
-    "sinon-chai": "~2.8.0"
+    "sinon-chai": "~2.8.0",
+    "yarn": "^0.17.9"
   },
   "peerDependencies": {
-    "@forthright/vile": ">=0.11.0"
+    "@forthright/vile": ">=0.11.2"
   }
 }
