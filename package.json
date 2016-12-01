@@ -25,7 +25,8 @@
     "istanbul": "istanbul",
     "release-it": "release-it",
     "test": "_mocha --recursive -u bdd -R spec -t 2000 .test/spec.js",
-    "test-cov": "bin/test-cov",
+    "test-cov": "node bin/test-cov",
+    "lint-cov": "node bin/lint-cov",
     "update": "ncu -a",
     "vile": "vile p -usi -x src:lib,test.coffee:.test.js --nodecorations"
   },
