@@ -1,6 +1,6 @@
 {
   "name": "@forthright/vile-escomplex",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A vile plugin for tracking complexity via escomplex",
   "license": "MPL-2.0",
   "repository": "https://github.com/forthright/vile-escomplex",
