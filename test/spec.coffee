@@ -40,7 +40,7 @@ describe "vile-escomplex", ->
           {
             type: vile.COMP,
             path: "src/complex-1.js",
-            complexity: 4
+            complexity: 7
           }
         ]
 
@@ -52,7 +52,7 @@ describe "vile-escomplex", ->
           {
             type: vile.COMP,
             path: "src/complex-1.js",
-            complexity: 4
+            complexity: 7
           }
         ]
 
@@ -84,14 +84,14 @@ describe "vile-escomplex", ->
             options:
               foo: true
               bar: "dd"
-              baz: 4
+              baz: 7
 
         lib.punish(config).should.be.fulfilled.notify ->
           setTimeout ->
             expect(escomplex.analyse.args[0][1]).to.eql {
                 foo: true
                 bar: "dd"
-                baz: 4
+                baz: 7
               }
             done()
           , 5

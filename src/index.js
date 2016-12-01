@@ -19,7 +19,7 @@ const complexity_value = (result, config) =>
     _.toNumber(
       _.get(config, "use_maintainability_index") ?
         _.get(result, "maintainability") :
-        _.get(result, "cyclomatic")
+        _.get(result, "aggregate.cyclomatic")
     ).toFixed(2))
 
 const into_issues = (config) =>
