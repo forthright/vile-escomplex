@@ -22,6 +22,8 @@ vile:
     - .npmrc
     - tags
     - tmp
+    - test/fixtures/*
+    - .test
     - tsconfig.json
     - tslint.json
     - tsd.json
@@ -29,6 +31,11 @@ vile:
     - README.md
     - typings
     - .vile.yml
+
+eslint:
+  ignore:
+    - lib
+    - test/fixtures/*
 
 depcheck:
   config:
