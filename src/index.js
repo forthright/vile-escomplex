@@ -1,5 +1,5 @@
-const path = require("path")
 const _ = require("lodash")
+const unixify = require("unixify")
 const escomplex = require("escomplex")
 const vile = require("@forthright/vile")
 
@@ -29,7 +29,7 @@ const into_issues = (config) =>
     let comp = complexity_value(result, config)
     return vile.issue({
       type: vile.COMP,
-      path: filepath,
+      path: unixify(filepath),
       complexity: comp
     })
   }
