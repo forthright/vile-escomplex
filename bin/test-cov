@@ -8,7 +8,7 @@ rm("-r", "coverage")
 mkdir("coverage")
 
 exec(
-  "npm run istanbul -- test --dir coverage _mocha " +
+  "istanbul test --dir coverage _mocha " +
   "-- --recursive -u bdd -R spec -t 2000 .test/spec.js",
   function(code) {
     if (code !== 0) exit(code)

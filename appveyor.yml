@@ -33,7 +33,7 @@ branches:
 
 skip_tags: true
 
-clone_depth: 25
+clone_depth: 10
 
 build: off
 
