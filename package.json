@@ -6,7 +6,6 @@
   "repository": "https://github.com/forthright/vile-escomplex",
   "main": "lib/index.js",
   "files": [
-    "bin",
     "lib",
     "README.md"
   ],
@@ -63,8 +62,7 @@
     "release-it": "^2.5.1",
     "shelljs": "^0.7.5",
     "sinon": "~1.17.6",
-    "sinon-chai": "~2.8.0",
-    "yarn": "^0.17.9"
+    "sinon-chai": "~2.8.0"
   },
   "peerDependencies": {
     "@forthright/vile": ">=0.11.2"
