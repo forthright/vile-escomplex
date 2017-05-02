@@ -1,8 +1,10 @@
 let s = 3
 
-const foo = (a, b, c, d, e, f) => {
+// TODO: why is => throwing left hand assignment error
+
+const foo = function(a, b, c, d, e, f) {
   if (a) {
-    const dd = (dsd) => dsd * 3
+    const dd = function (dsd) { return dsd * 3 }
 
     const x = 3
 
@@ -31,9 +33,9 @@ const foo = (a, b, c, d, e, f) => {
 
 let as = [ 1,2,3,4,5,6,7,8,9 ]
 
-as.forEach((p) => {
-  as.forEach((f) => {
-    as.forEach((z) => {
+as.forEach(function (p) {
+  as.forEach(function (f) {
+    as.forEach(function (z) {
       console.log(z)
     })
   })

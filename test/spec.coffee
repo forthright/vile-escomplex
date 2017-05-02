@@ -1,14 +1,12 @@
 path = require "path"
 _ = require "lodash"
-sinon_chai = require "./helpers/sinon_chai"
+chai = require "./helpers/sinon_chai"
 mimus = require "mimus"
 sinon = require "sinon"
 escomplex = require "escomplex"
-chai = require "chai"
 expect = chai.expect
-lib = mimus.require "../lib/index", __dirname, [ "vile" ]
-
-vile = mimus.get lib, "vile"
+vile = require "vile"
+lib = mimus.require "../lib/index", __dirname
 
 system_test_dir = path.resolve(
   path.join __dirname, "..", "test", "fixtures")
@@ -64,7 +62,7 @@ describe "vile-escomplex", ->
           {
             type: vile.COMP,
             path: "complex-2.es6",
-            complexity: 128.31
+            complexity: 127.66
           }
           {
             type: vile.COMP,
