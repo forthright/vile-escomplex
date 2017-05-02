@@ -1,7 +1,7 @@
 const _ = require("lodash")
 const unixify = require("unixify")
 const escomplex = require("escomplex")
-const vile = require("@forthright/vile")
+const vile = require("vile")
 
 const IS_JS = /(\.js|\.es6)$/
 
