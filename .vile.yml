@@ -59,6 +59,10 @@ depcheck:
 
 escomplex:
   ignore:
+    - src
+
+comment:
+  ignore:
     - lib
 
 length:
