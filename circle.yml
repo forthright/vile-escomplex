@@ -8,13 +8,6 @@ checkout:
     - git checkout -f $CIRCLE_BRANCH
 
 dependencies:
-  cache_directories:
-    - ~/.yarn-cache
-
-  override:
-    - npm i -g yarn
-    - yarn install --no-progress
-
   post:
     - npm run compile
     - npm run compile-dev
