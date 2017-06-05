@@ -34,6 +34,8 @@ install:
   - ps: Install-Product node $env:nodejs_version
   - ver && node --version && npm --version
   - npm i
+  # TODO: why does this fail only on appveyor (npm v2)?
+  - npm i esprima
 
 test_script:
   - npm run compile
