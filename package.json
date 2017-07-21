@@ -1,7 +1,7 @@
 {
   "name": "vile-escomplex",
   "version": "0.1.5",
-  "description": "A vile plugin for tracking complexity via escomplex",
+  "description": "Track the complexity of your JavaScript code.",
   "main": "lib/index.js",
   "files": [
     "lib",

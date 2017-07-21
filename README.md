@@ -1,11 +1,10 @@
 # vile-escomplex [![CircleCI](https://circleci.com/gh/forthright/vile-escomplex.svg?style=shield&circle-token=c784fb6e6036f610d45b765411d70406aa4329a6)](https://circleci.com/gh/forthright/vile-escomplex) [![Build status](https://ci.appveyor.com/api/projects/status/rrvlth55ptq0xeyd/branch/master?svg=true)](https://ci.appveyor.com/project/brentlintner/vile-escomplex/branch/master) [![score-badge](https://vile.io/api/v0/projects/vile-escomplex/badges/score?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-escomplex) [![security-badge](https://vile.io/api/v0/projects/vile-escomplex/badges/security?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-escomplex) [![coverage-badge](https://vile.io/api/v0/projects/vile-escomplex/badges/coverage?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-escomplex) [![dependency-badge](https://vile.io/api/v0/projects/vile-escomplex/badges/dependency?token=USryyHar5xQs7cBjNUdZ)](https://vile.io/~brentlintner/vile-escomplex)
 
-A [vile](https://vile.io) plugin for calculating JavaScript complexity stats. Uses [escomplex](https://github.com/escomplex/escomplex).
+A [Vile](https://vile.io) plugin for tracking the complexity of your JavaScript code (via [escomplex](https://github.com/escomplex/escomplex)).
 
 ## Requirements
 
-- [nodejs](http://nodejs.org)
-- [npm](http://npmjs.org)
+- [Node.js](http://nodejs.org)
 
 ## Installation
 
@@ -61,7 +60,7 @@ generated for each file only.
 
 ## Versioning
 
-This project ascribes to [semantic versioning](http://semver.org).
+This project uses [Semver](http://semver.org).
 
 ## Licensing
 
@@ -88,15 +87,13 @@ Even if you are uncomfortable with code, an issue or question is welcome.
 
 ### Code Of Conduct
 
-This project ascribes to [contributor-covenant.org](http://contributor-covenant.org).
-
 By participating in this project you agree to our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Maintainers
 
 - Brent Lintner - [@brentlintner](http://github.com/brentlintner)
 
-## Hacking
+## Developing
 
     cd vile-escomplex
     npm install
