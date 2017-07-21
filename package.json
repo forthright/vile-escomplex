@@ -1,6 +1,6 @@
 {
   "name": "vile-escomplex",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Track the complexity of your JavaScript code.",
   "main": "lib/index.js",
   "files": [
